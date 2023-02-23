@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(25, 23, 23);
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+.me{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 28rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    text-align: center;
+}
+.me .user img{
+    margin-top: 50px;
+    height:180px;
+    width: 180px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    margin-bottom: 1rem;
+    border: 0.5rem solid rgb(234, 242, 243);
+}
+.me .user .name{
+    font-size: 2.3rem;
+    color: aliceblue;
+}
+.me .user .post{
+    font-size: 2rem;
+    color: rgb(171, 177, 144);
+} 
+.me .navbar{
+    width: 100%;
+}
+.me .navbar ul{
+    list-style: none;
+    padding: 0.8rem 5rem;
+    color: rgba(127, 255, 212, 0.308) ;
+}
+
+.me .navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem;
+    margin:  1.5rem;
+    background: darkcyan;
+    color: rgb(6, 6, 6);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    scroll-snap-align: 2rem;
+    border-radius: 2rem;
+}
+.me .navbar ul li a:hover{
+    background: hotpink;
+}
+
+
+.home{
+    display:flex ;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 12rem;
+}
+.home h3{
+    font-size: 2.7rem;
+    color: beige;
+    
+}
+.home h1{
+    font-size: 4rem;
+    color: rgb(176, 176, 88);
+    
+}
+.home p{
+    font-size: 1.8rem;
+    color: rgb(147, 152, 142); 
+    text-align: justify;
+}
+.btn{
+    padding: .5rem 2.7rem;
+    background: rgb(68, 129, 146);
+    color: rgb(5, 12, 12);
+    cursor: pointer;
+    margin-top: 1.3rem ;
+    font-size: 1.6rem;
+    border-radius: 1.6rem;
+}
+.btn:hover{
+    background: rgb(188, 118, 169);
+    color: rgb(35, 17, 78);
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.1rem solid gainsboro;
+    color: azure;
+}
+.heading span{
+    color: aquamarine;
+    
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+}
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 1.8rem;
+    color: rgb(176, 176, 88);
+    padding: 0.8rem 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: aquamarine;
+    padding: 0 0.5rem;
+}
+.about .row .counter{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 10rem;
+    background: rgba(38, 38, 31, 0.559);
+    text-align: center;
+    padding: .5rem;
+    margin: .6rem;
+    border-radius: 1.5rem;
+}
+.about .row .counter .box span{
+    font-size: 2rem;
+    color:rgb(208, 225, 225); 
+}
+.about .row .counter .box h3{
+    font-size: 1.8rem;
+    color: rgba(122, 158, 130, 0.877);
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-right: 10px;
+}
+.education .box-container .box{
+    width: 18rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: 0.2rem solid rgb(249, 255, 205);
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: rgb(185, 161, 183);
+    color: rgb(5, 6, 6);
+    border-radius: 1rem;
+    padding: 0.5rem 2.5rem;
+}
+.education .box-container .box h3{
+    font-size: 2.2rem;
+    color: rgba(127, 255, 212, 0.637);
+    padding-top: 1.5rem;
+}
+.education .box-container .box p{
+    font-size: 1.3rem;
+    color: rgb(199, 216, 157);
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.portfolio .box-container .box{
+    height: 17rem;
+    width: 22rem;
+    border-radius: 0.7rem;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* box-shadow: 3px 3px blue; */
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+
+/* contact */
+.content .info{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .frm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 0.2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+}
+.contact .row form .box{
+    padding: 0.7rem;
+    margin: 1rem 0;
+    background: rgba(70, 73, 70, 0.404);
+    color: rgb(202, 206, 150);
+    font-weight:bolder;
+    text-transform:capitalize;
+    font-size: 1.3rem;
+    width: 60%;
+    border-radius: 1.3rem;
+    box-shadow: 2px 2px whitesmoke;
+    
+}
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    padding-bottom: 1.7rem;
+}
+.content .info .img1{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.contact .row .content .info .img1 h3{
+    
+    /* display: flex; */
+    /* align-items:center; */
+    color: rgb(208, 208, 218);
+    padding: 1rem;
+    font-weight: normal;
+    
+}
+.contact .row .content .info .img1 img{
+    width: 4%;
+    height: 3%;
+    border-radius: 8px;
+    
+}
+.top{
+    position: fixed;
+    bottom: 6rem;
+    right: 1.3rem;
+    z-index:100;
+    display: none;
+}
